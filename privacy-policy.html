@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | SOUTHGRASP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #faf8f4;
+      --dark: #1a1a18;
+      --mid: #5a5a52;
+      --accent: #8b7355;
+      --line: rgba(90,90,82,0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem 4rem;
+      background: rgba(250,248,244,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.15rem;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+      color: var(--dark);
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2.4rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--mid);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: color 0.25s;
+    }
+
+    .nav-links a:hover { color: var(--dark); }
+
+    /* ── HERO ── */
+    .page-hero {
+      padding: 10rem 4rem 5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-hero .en-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+
+    .page-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.15;
+      color: var(--dark);
+    }
+
+    .page-hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .page-hero .updated {
+      margin-top: 1.6rem;
+      font-size: 0.75rem;
+      color: var(--mid);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── CONTENT ── */
+    .policy-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 5rem 4rem 8rem;
+    }
+
+    .policy-section {
+      margin-bottom: 3.6rem;
+      padding-bottom: 3.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .section-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .policy-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      color: var(--dark);
+      margin-bottom: 1.4rem;
+    }
+
+    .policy-section p {
+      color: var(--mid);
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    .policy-section ul {
+      list-style: none;
+      margin: 0.8rem 0 1rem 0;
+    }
+
+    .policy-section ul li {
+      color: var(--mid);
+      font-size: 0.9rem;
+      padding: 0.45rem 0 0.45rem 1.4rem;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      line-height: 1.7;
+    }
+
+    .policy-section ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    .contact-box {
+      background: #f2ede5;
+      border-left: 2px solid var(--accent);
+      padding: 1.8rem 2rem;
+      margin-top: 1.2rem;
+    }
+
+    .contact-box p {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--dark);
+    }
+
+    .contact-box strong {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.6rem;
+      color: var(--dark);
+      font-weight: 400;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2.4rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+      color: var(--dark);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+    }
+
+    /* ── BACK LINK ── */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      transition: gap 0.2s;
+    }
+
+    .back-link:hover { gap: 0.8rem; }
+
+    .back-link svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 1.2rem 1.6rem; }
+      .nav-links { gap: 1.4rem; }
+      .page-hero { padding: 8rem 1.6rem 3rem; }
+      .policy-wrap { padding: 3rem 1.6rem 5rem; }
+      footer { padding: 2rem 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="/">Southgrasp</a>
+  <ul class="nav-links">
+    <li><a href="/#brand">Brand</a></li>
+    <li><a href="/#products">Products</a></li>
+    <li><a href="/#company">Company</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <p class="en-label">Legal</p>
+  <h1>Privacy <em>Policy</em></h1>
+  <p class="updated">制定日：2026年4月22日</p>
+</section>
+
+<!-- CONTENT -->
+<main class="policy-wrap">
+
+  <a class="back-link" href="/">
+    <svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Home
+  </a>
+
+  <div class="policy-section">
+    <p class="section-num">はじめに</p>
+    <h2>基本方針</h2>
+    <p>株式会社サウスグラスプ（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、個人情報の保護に関する法律（個人情報保護法）および関連法令を遵守し、以下のプライバシーポリシー（以下「本ポリシー」）に従って適切に取り扱います。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 01</p>
+    <h2>取得する情報</h2>
+    <p>当社は、以下の個人情報を取得することがあります。</p>
+    <ul>
+      <li>氏名・ふりがな</li>
+      <li>メールアドレス</li>
+      <li>電話番号</li>
+      <li>住所（お届け先含む）</li>
+      <li>お問い合わせ内容・ご相談内容</li>
+      <li>当社ウェブサイトへのアクセス情報（Cookieを含む）</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 02</p>
+    <h2>利用目的</h2>
+    <p>取得した個人情報は、以下の目的のために利用します。</p>
+    <ul>
+      <li>お問い合わせ・ご相談への対応</li>
+      <li>商品のご注文・お届けに関する業務の処理</li>
+      <li>新商品・サービスに関するご案内（メールマガジン等）</li>
+      <li>当社サービスの改善・新サービスの開発</li>
+      <li>法令に基づく対応が必要な場合</li>
+    </ul>
+    <p>利用目的の範囲を超えて個人情報を利用する場合には、あらかじめお客様の同意を得るものとします。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 03</p>
+    <h2>第三者への提供</h2>
+    <p>当社は、以下の場合を除き、お客様の個人情報を第三者に提供・開示しません。</p>
+    <ul>
+      <li>お客様ご本人の同意がある場合</li>
+      <li>法令に基づき開示・提供が求められる場合</li>
+      <li>人の生命・身体・財産の保護のために必要であり、本人の同意取得が困難な場合</li>
+      <li>業務委託先に対し、利用目的の達成に必要な範囲内で提供する場合（当社は委託先と秘密保持契約を締結し、適切な管理を徹底します）</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 04</p>
+    <h2>Cookieの利用</h2>
+    <p>当社ウェブサイトでは、サービス向上・利便性改善を目的としてCookieを使用しています。Cookieはお客様のブラウザに保存される小さなデータファイルであり、個人を特定する情報を単独で含むものではありません。</p>
+    <p>ブラウザの設定によりCookieの受け入れを拒否することが可能ですが、その場合、当社ウェブサイトの一部機能が正常に動作しないことがあります。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 05</p>
+    <h2>安全管理措置</h2>
+    <p>当社は、取得した個人情報の漏えい・滅失・き損を防ぐため、適切な技術的・組織的安全管理措置を講じます。また、個人情報を取り扱う従業者および委託先に対して、適切な監督を行います。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 06</p>
+    <h2>開示・訂正・削除</h2>
+    <p>お客様は、当社が保有するご自身の個人情報について、開示・訂正・追加・削除・利用停止・第三者提供停止を請求する権利を有します。</p>
+    <p>ご請求の際は、ご本人であることを確認させていただいた上で、法令の定めに従い合理的な期間内に対応します。下記お問い合わせ窓口までご連絡ください。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">Article 07</p>
+    <h2>プライバシーポリシーの変更</h2>
+    <p>当社は、必要に応じて本ポリシーを改定することがあります。重要な変更を行う場合には、当社ウェブサイト上でお知らせします。改定後の本ポリシーは、ウェブサイトへの掲載時点から効力を生じるものとします。</p>
+  </div>
+
+  <div class="policy-section">
+    <p class="section-num">お問い合わせ</p>
+    <h2>個人情報に関するお問い合わせ</h2>
+    <p>本ポリシーに関するご質問、個人情報の取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。</p>
+    <div class="contact-box">
+      <strong>株式会社サウスグラスプ　個人情報お問い合わせ窓口</strong>
+      <a href="/#contact" style="display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.8rem;color:var(--accent);font-size:0.82rem;letter-spacing:0.12em;text-decoration:none;text-transform:uppercase;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        お問い合わせフォームはこちら
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <a class="footer-logo" href="/">Southgrasp</a>
+  <span class="footer-copy">© 2026 Southgrasp Inc. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
